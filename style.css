@@ -53,13 +53,14 @@ header.rolagem {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 0px;
+    padding: 30px 0px;
 }
 
 .logo {
-    width: 130px;
-    height: 180px;
+    width: 247px;
+    height: 87px;
 }
+
 
 header ul {
     list-style-type: none;
@@ -111,15 +112,14 @@ header ul li a {
     text-align: center;
 }
 
-.img-site1,.img-site2, .img-site3 {
-    object-fit: contain;
-    width: 500px ;
-    height: 450px;
+.img-site3 {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
 }
 
-
 section.topo-do-site {
-    padding: 20px 10px;
+    padding: 20px 5px;
 }
 
 section.topo-do-site .flex {
@@ -149,6 +149,10 @@ section.topo-do-site .flex {
     cursor: pointer;
     transition: .2s;
     font-size: 15px;
+}
+
+.btn-contato a {
+    margin: 10px;
 }
 
 
