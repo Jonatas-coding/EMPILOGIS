@@ -152,6 +152,7 @@
         object-fit: cover;
         width: 360px;
         height: 330px;
+        margin: 0px 0px 10px 0px;
     }
 
     .topo-do-site .btn-contato button {
