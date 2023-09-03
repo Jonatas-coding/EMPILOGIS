@@ -97,12 +97,14 @@ header ul li a {
 }
 
 .banner h1 {
-    font-size: 64px;
-    color: #000000;;
+    font-size: 50px;
+    color: #000000;
 }
 
 .banner h1 span {
     color: 	#ffd700;
+    font-size: 35px;
+    display: block;
 }
 
 /* style body da página*/
