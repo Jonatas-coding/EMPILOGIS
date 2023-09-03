@@ -139,7 +139,7 @@
     }
 
     html {
-        scroll-padding-top: 110px;
+        scroll-padding-top: 480px;
     }
 
     .img-site2, .img-site3, .img-site1 {
@@ -159,8 +159,8 @@
         height: 25px;
         border: 0;
         border-radius: 5px;
-        background-color: 	#191970;
-        color: #ffffff;
+        background-color: 	#ffd700;
+        color: #000000;
         cursor: pointer;
         transition: .2s;
         font-size: 15px;
