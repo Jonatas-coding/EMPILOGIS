@@ -179,7 +179,7 @@ footer {
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 100px 52px;
+    padding: 50px  52px 200px 52px;
 }
 
 #footer-contatos h1 {
