@@ -9,7 +9,7 @@ html {
     height: 100%;
     background-color: #000000;
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
+    scroll-padding-top: 350px;
 }
 
 .flex {
@@ -73,12 +73,13 @@ header ul li {
 }
 
 header ul li a {
-    color: #ffffff;
-    background-color: #191970;
+    color: #000000;
+    background-color: #ffd700;
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 
@@ -96,11 +97,11 @@ header ul li a {
 
 .banner h1 {
     font-size: 64px;
-    color: #191970;;
+    color: #000000;;
 }
 
 .banner h1 span {
-    color: 	#ffffff;
+    color: 	#ffd700;
 }
 
 /* style body da página*/
@@ -138,6 +139,7 @@ section.topo-do-site .flex {
     color: #ffffff;
     margin: 40px 0px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .topo-do-site .btn-contato button {
@@ -145,8 +147,8 @@ section.topo-do-site .flex {
     height: 30px;
     border: 0;
     border-radius: 5px;
-    background-color: #191970;
-    color: #ffffff;
+    background-color: #ffd700;
+    color: #000000;
     cursor: pointer;
     transition: .2s;
     font-size: 15px;
@@ -174,7 +176,7 @@ footer {
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 100px 56px;
+    padding: 100px 52px;
 }
 
 #footer-contatos h1 {
@@ -318,7 +320,7 @@ form input[type=submit]{
     padding: 10px 40px;
     border: 0;
     border-radius: 10px;
-    background: #191970;
-    color: #ffffff;
+    background: #ffd700;
+    color: #000000;
     cursor: pointer;
 }
