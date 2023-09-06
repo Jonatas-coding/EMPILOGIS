@@ -61,7 +61,7 @@
                             A Motriz, Maquinas & Equipamentos é uma empresa que vem atuando no mercado de
                             fornecimento de peças e serviços para empilhadeiras elétricas e paleteiras hidráulicas,
                             oferecendo aos seus clientes peças de qualidade e mão de obra especializada com 
-                    experiência há mais de 20 anos no mercado.
+                            experiência há mais de 20 anos no mercado.
                         </P>
 
                     </div><!--txt-topo-site-->
@@ -154,13 +154,10 @@
             <img src="img/logo1.png" alt="logo" class="logo-footer">
 
             <div id="footer-social">
-                <a href="#" class="footer-link" id="instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.mercadolivre.com.br/" class="footer-link" id="m-livre" target="_blank">
+                    <i class="fa-regular fa-handshake"></i>
                 </a>
 
-                <a href="#" class="footer-link" id="facebook" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
 
                 <a href="#" class="footer-link" id="whatsapp" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -218,32 +215,33 @@
 
    <section class="form-container">
         <div class="container">
-            <form action="">
+
+            <form method="post" action="enviar.php">
                 <h2>Entre em contato</h2>
                 <p>Preencha o formulário abaixo e entraremos contato com você.</p>
 
                 <div class="input-single">
-                    <input type="text" id="nome-box" class="input" autocomplete="off" required>
+                    <input type="text" name="nome" id="nome-box" class="input" autocomplete="off" required>
                     <label for="nome-box">Nome:</label>
                 </div>
 
                 <div class="input-single">
-                    <input type="tel" id="telefone-box" class="input" autocomplete="off" required>
-                    <label for="nome-box">Tefefone:</label>
-                </div>
-
-                
-                <div class="input-single">
-                    <input type="email" id="telefone-box" class="input" autocomplete="off" required>
+                    <input type="email" name="email" id="telefone-box" class="input" autocomplete="off" required>
                     <label for="nome-box">Email:</label>
                 </div>
 
+                <div class="input-single">
+                    <input type="tel" name="telefone" id="telefone-box" class="input" autocomplete="off" required>
+                    <label for="nome-box">Tefefone:</label>
+                </div>
+
                 <div class="mesage">
-                    <textarea placeholder="Assunto..." ></textarea>
+                    <textarea placeholder="Assunto...></textarea>
                 </div>
 
                 <div class="btn"><input type="submit" value="Enviar"></div>
             </form>
+
         </div>
    </section>
 
