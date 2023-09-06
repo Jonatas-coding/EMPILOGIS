@@ -113,6 +113,10 @@
         text-align: center;
     }
 
+    .txt-topo-site {
+        padding: 0px;
+    }
+
     .coluna {
         padding: 30px 0px;
         justify-content: center;
@@ -126,6 +130,10 @@
     
     #footer-content textarea {
         text-align: center;
+    }
+
+    #footer-social {
+        justify-content: center;
     }
 
     .logo {
