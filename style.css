@@ -189,7 +189,6 @@ footer {
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 50px  52px 200px 52px;
 }
 
 #footer-contatos h1 {
@@ -253,6 +252,10 @@ footer {
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+.form-container {
+    padding: 0px 0px  210px  0px;
 }
 
 /*Form do site*/
