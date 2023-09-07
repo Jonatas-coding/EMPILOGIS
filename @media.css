@@ -121,6 +121,9 @@
         padding: 30px 0px;
         justify-content: center;
         align-items: center;
+        object-fit: cover;
+        width: 530px;
+        height: 85px;
     }
 
     #footer-content {
@@ -156,8 +159,8 @@
         scroll-padding-top: 480px;
     }
 
-    .img-site2, .img-site3, .img-site1 {
-        object-fit: contain;
+    .img-site2, .img-site3 {
+        object-fit: cover;
         width: 360px;
         height: 270px;
     }
