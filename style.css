@@ -1,257 +1,345 @@
-<!DOCTYPE html>
-<html lang="pt.br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="@media.css">
-    <title>Motriz</title>
-</head>
-<body>
-    
-    <header id="header">
-        <div class="container">
- 
-             <div class="header-menu">
- 
-                 <img src="img/logo1.png" class="logo" alt="logo">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akzidenz-Grotesk', sans-serif;
+}
 
-                     <ul id="nav-menu">
-                         <li><a href="#motriz">EMPRESA</a></li>
-                         <li><a href="#peças">PEÇAS</a></li>
-                         <li><a href="#serviços">SERVIÇOS</a></li>
-                         <li><a href="#contatos">CONTATOS</a></li>
-                     </ul>
-                
-                <div class="hamburguer">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </div>
+html {
+    height: 100%;
+    background-color: #000000;
+    scroll-behavior: smooth;
+    scroll-padding-top: 400px;
+}
 
-                  
-             </div><!--header-menu-->
- 
-        </div><!--container-->
-     </header><!--header-->
+.flex {
+    display: flex;
+}
 
-    <section class="banner">
-        <h1><span>Seja bem vindo!</span>Obrigado por escolher a Motriz Máquinas & Equipamentos</h1>
-    </section><!--banner-->
+.header, .header-menu li:hover {
+    box-shadow: 0px 0px 8px #000000;
+    transform: scale(1.05);
+    transition: .2s;
+}
 
 
-    
-    <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
+.topo-do-site .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #ffd700;
+    transform: scale(1.05);
+}
 
-                    <div class="img-coluna">
-                        <img src="img/coluna 1.png" alt="coluna" class="coluna" loading="lazy">
-                        <img src="img/Empi e Pale.png" alt="empilhadeira-elétrica" class="img-site1" loading="lazy">
-                    </div><!--img-topo-site-->
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
 
-                    <div class="txt-topo-site">
-                        <h2 id="motriz">EMPRESA</h2>
-                        
-                        <P>
-                            A Motriz, Maquinas & Equipamentos é uma empresa que vem atuando no mercado de
-                            fornecimento de peças e serviços para empilhadeiras elétricas e paleteiras hidráulicas,
-                            oferecendo aos seus clientes peças de qualidade e mão de obra especializada com 
-                            experiência há mais de 20 anos no mercado.
-                        </P>
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-                    </div><!--txt-topo-site-->
-
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
-
-    
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-
-                    <div class="img-coluna">
-                        <img src="img/coluna 2.png" alt="coluna" class="coluna" loading="lazy">
-                        <img src="img/Peças-1.jpg" alt="empilhadeira-elétrica" class="img-site2" loading="lazy">
-                    </div><!--img-topo-site-->
-
-                    <div class="txt-topo-site">
-                        <h2 id="peças">PEÇAS</h2>
-                        
-                        <P> 
-                            Fornecemos peças, para empilhadeiras elétricas e paleteiras hidráulicas, nacionais e
-                            importadas de diversas marcas e modelos, para todo território nacional.
-                            Entre em contato conosco hoje mesmo para obter mais informações sobre nossos produtos e serviços. 
-                        </P>
-
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button> <b>DÚVIDAS</b> </button>
-                            </a>
-                            <a href="#">
-                                <button> <b>ORÇAMENTO</b> </button>
-                            </a>
-                            <a href="#">
-                                <button> <b>CONTATO</b> </button>
-                            </a>
-                        </div>
-                    </div><!--txt-topo-site-->
-
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
+header {
+    width: 100%;
+    padding: 30px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    background: #ffffff;
+}
 
 
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
+header.rolagem {
+    background: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
 
-                    <div class="img-coluna">
-                        <img src="img/coluna 3.png" alt="coluna" class="coluna" loading="lazy">
-                        <img src="img/manutenção.jpg" alt="empilhadeira-elétrica" class="img-site3" loading="lazy">
-                    </div><!--img-topo-site-->
+.logo {
+    width: 247px;
+    height: 87px;
+}
 
-                    <div class="txt-topo-site">
-                        <h2 id="serviços">SERVIÇOS</h2>
-
-                        <P>
-                            Com técnicos altamente qualificados, oferecemos aos nossos clientes, <b>assistência técnica,</b>
-                            <b>manutenção preventica e corretiva</b> em empilhadeiras elétricas e paleteiras hidráulicas,
-                            nacionais e importadas de diversas marcas e modelos.
-                            Entre em contato conosco hoje mesmo para obter mais informações sobre nossos produtos e serviços.
-                        </P>
-
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button> <b>DÚVIDAS</b> </button>
-                            </a>
-                            <a href="#">
-                                <button> <b>ORÇAMENTO</b> </button>
-                            </a>
-                            <a href="#">
-                                <button> <b>CONTATO</b> </button>
-                            </a>
-                        </div>
-                    </div><!--txt-topo-site-->
-
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
-
-    
-    </main>
-
-    
-<footer id="footer-content">
-    <div>
-
-        <div id="footer-contatos">
-            <img src="img/logo1.png" alt="logo" class="logo-footer">
-
-            <div id="footer-social">
-                <a href="https://www.mercadolivre.com.br/" class="footer-link" id="m-livre" target="_blank">
-                    <i class="fa-regular fa-handshake"></i>
-                </a>
+.logo-footer {
+    width: 227px;
+    height: 77px;
+}
 
 
-                <a href="#" class="footer-link" id="whatsapp" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div><!--footer-social-->
-        </div><!--footer-contatos-->
+header ul {
+    list-style-type: none;
+}
 
-    </div>
+header ul li {
+    display: inline-block;
+    margin: 0 50px;
+}
 
-    <ul class="footer-list">
-
-        <li>
-            <h3 id="contatos">Contatos</h3>
-        </li>
-        
-        <li>
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            <a href="tel:+551699379-0658" class="footer-link" target="_blank"> <b>(16) 98825-2356</b></a>
-        </li>
-
-        <h4>Ribeirão Preto - SP</h4>
-
-        <li>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="https://outlook.live.com/mail/" class="footer-link" target="_blank">comercial.motriz@hotmail.com</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-store"></i>
-            <a href="https://www.mercadolivre.com.br/" class="footer-link" target="_blank">Mercado livre</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-at"></i>
-            <a href="#" class="footer-link" target="_blank">www.motriz.com.br</a>
-        </li>
-
-        <h4>Seg á Sex - 08:00 às 18:00</h4>
-
-    </ul>
-
-    <ul class="footer-list">
-
-        <li>
-            <h3>Formas de Pagamento</h3>
-        </li>
-        <li>
-            <div class="Pay">
-                <img class="Visa" width="55px" height="37px" src="https://cdn.triviapw.com.br/wp-content/uploads/2020/09/visa-icon.png.webp" loading="lazy">
-                <img class="Master" width="55px" height="37px" src="https://cdn.triviapw.com.br/wp-content/uploads/2020/09/credito-mastercard-icon.png.webp" loading="lazy">
-                <img class="Picpay" width="55px" height="37px" src="https://cdn.triviapw.com.br/wp-content/uploads/2020/09/boleto.png" loading="lazy">
-                <img class="Pix" width="55px" height="37px" src="https://cdn.triviapw.com.br/wp-content/uploads/2021/02/pix.png.webp" loading="lazy">
-              </div>
-        </li>
-
-    </ul>
-
-   <section class="form-container">
-        <div class="container">
-
-            <form method="post" action="index.php">
-                <h2>Entre em contato</h2>
-                <p>Preencha o formulário abaixo e entraremos contato com você.</p>
-
-                <div class="input-single">
-                    <input type="text" name="nome" id="nome-box" class="input" autocomplete="off" required>
-                    <label for="nome">Nome:</label>
-                </div>
-
-                <div class="input-single">
-                    <input type="email" name="email" id="telefone-box" class="input" autocomplete="off" required>
-                    <label for="email">Email:</label>
-                </div>
-
-                <div class="input-single">
-                    <input type="tel" name="telefone" id="telefone-box" class="input" autocomplete="off" required>
-                    <label for="telefone">Tefefone:</label>
-                </div>
-
-                <div class="input-single">
-                    <textarea name="mensagem" placeholder="Assunto..."></textarea>
-                </div>
-
-                <div class="btn"><input type="submit" value="Enviar"></div>
-            </form>
-
-        </div>
-   </section>
-</footer>
+header ul li a {
+    color: #000000;
+    background-color: #ffd700;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 
-<div id="footer-direitos">
-    &#169
-    2023 todos os diretios reservados.
-</div>
+.banner {
+    background-image: url(img/fundo2.png);
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+.banner h1 {
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.banner h1 span {
+    color: 	#ffd700;
+    font-size: 50px;
+    display: block;
+    font-weight: bold;
+}
+
+/* style body da página*/
+
+.coluna {
+    padding: 20px 10px;
+    object-fit: cover;
+    width: 530px;
+    height: 75px;
+}
+
+.img-coluna {
+    text-align: center;
+}
+
+.img-site1, .img-site3, .img-site2 {
+    object-fit: contain;
+    width: 600px;
+    height: 500px;
+}
+
+section.topo-do-site {
+    padding: 20px 10px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+}
+
+
+.topo-do-site .txt-topo-site h2 {
+    color: #ffffff;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #ffffff;
+    margin: 40px 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.txt-topo-site {
+    padding: 0px 100px;
+}
+
+
+.topo-do-site .btn-contato button {
+    width: 160px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #000000;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 15px;
+}
+
+.btn-contato a {
+    margin: 10px;
+}
+
+
+/* footer da página*/
+
+footer {
+    letter-spacing: 1px;
+    width: 100%;
+    color: #000000;
+}
+
+#footer-link {
+    text-decoration: none;
+}
+
+#footer-content {
+    align-items: center;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 50px;
+}
+
+#footer-contatos h1 {
+    margin-bottom: 0.75rem;
+}
+
+
+#footer-social {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#footer-social .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social .footer-link i {
+    font-size: 1.30rem;
+}
+
+#footer-social .footer-link:hover {
+    opacity: 0.8;
+}
+
+#m-livre {
+    background: linear-gradient(#ffd700, #ffffff, #ffd700);
+}
+
+#whatsapp {
+    background: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: #000000;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #ffd700;
+}
+
+#footer-direitos {
+    display: flex;
+    background: #000;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+.form-container {
+    padding: 0px 0px  210px  0px;
+}
+
+/*Form do site*/
+
+.container {
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+form {
+    background: #ffffff;
+    max-width: 450px;
+    height: 400px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 25px;
+    color:  #2d5966;
+}
+
+form p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+    color:  #2d5966;
+}
+
+textarea {
+    font-size: 15px;
+    padding: 8px 0px;
+    height: 150px;
+    border: 0px;
+    width: 100%;
+    border-bottom: 2px  solid  #2d5966;
+  }
+
+.input-single {
+    position: static;
+    margin: 30px 0;
+}
+
+.input-single label {
+    position: static;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid  #2d5966;
+    padding: 8px 0px;
+    font-size: 18px;
+    outline: none;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #2d5966;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background: #ffd700;
+    color: #000000;
+    cursor: pointer;
+}
