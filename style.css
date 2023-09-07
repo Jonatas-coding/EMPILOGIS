@@ -24,7 +24,7 @@ html {
 
 
 .topo-do-site .btn-contato button:hover {
-    box-shadow: 0px 0px 8px #ffffff;
+    box-shadow: 0px 0px 8px #ffd700;
     transform: scale(1.05);
 }
 
@@ -90,7 +90,7 @@ header ul li a {
 
 
 .banner {
-    background-image: url(img/fundo3.jpg);
+    background-image: url(img/fundo2.png);
     background-size: cover;
     max-width: 100%;
     background-position: center;
@@ -102,20 +102,25 @@ header ul li a {
 }
 
 .banner h1 {
-    font-size: 50px;
+    font-size: 35px;
     color: #000000;
+    font-weight: bold;
 }
 
 .banner h1 span {
     color: 	#ffd700;
-    font-size: 35px;
+    font-size: 50px;
     display: block;
+    font-weight: bold;
 }
 
 /* style body da página*/
 
 .coluna {
     padding: 20px 10px;
+    object-fit: cover;
+    width: 530px;
+    height: 75px;
 }
 
 .img-coluna {
@@ -189,6 +194,7 @@ footer {
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 20px 50px;
 }
 
 #footer-contatos h1 {
