@@ -216,23 +216,27 @@
    <section class="form-container">
         <div class="container">
 
-            <form method="post" action="enviar.php">
+            <form method="post" action="index.php">
                 <h2>Entre em contato</h2>
                 <p>Preencha o formulário abaixo e entraremos contato com você.</p>
 
                 <div class="input-single">
                     <input type="text" name="nome" id="nome-box" class="input" autocomplete="off" required>
-                    <label for="nome-box">Nome:</label>
+                    <label for="nome">Nome:</label>
                 </div>
 
                 <div class="input-single">
                     <input type="email" name="email" id="telefone-box" class="input" autocomplete="off" required>
-                    <label for="nome-box">Email:</label>
+                    <label for="email">Email:</label>
                 </div>
 
                 <div class="input-single">
                     <input type="tel" name="telefone" id="telefone-box" class="input" autocomplete="off" required>
-                    <label for="nome-box">Tefefone:</label>
+                    <label for="telefone">Tefefone:</label>
+                </div>
+
+                <div class="input-single">
+                    <textarea name="mensagem" placeholder="Assunto..."></textarea>
                 </div>
 
                 <div class="btn"><input type="submit" value="Enviar"></div>
@@ -240,9 +244,8 @@
 
         </div>
    </section>
-
-    
 </footer>
+
 
 <div id="footer-direitos">
     &#169
