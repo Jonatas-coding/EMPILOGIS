@@ -7,14 +7,13 @@
     $para = "comercial.motriz@hotmail.com";
     $assunto = "Coleta de dados - Motriz";
 
-    $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: "."$telefone";
+    $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone;
 
-    $cabeca = "From: "jonatasoliveira2016@hotmail.com"."\n"."Replay-to: ".$email."\n"."X=Mailer:PHP/".phpversivon();
+    $cabeca = "From: jonatasoliveira2016@hotmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversivon();
 
-    if(mail($para, $assunto, $corpo, $cabeca)){
+    if(mail($para,$assunto,$corpo,$cabeca)){
         echo("Email enviado com sucesso!");
     } else {
         echo("Houve um erro ao enviar o email!");
     }
-
 ?>
