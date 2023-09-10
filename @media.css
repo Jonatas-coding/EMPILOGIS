@@ -106,8 +106,8 @@
         padding: 30px 0px;
         justify-content: center;
         align-items: center;
-        object-fit: cover;
-        height: 87px;
+        object-fit: contain;
+        height: 90px;
     }
 
     .topo-do-site .txt-topo-site p {
