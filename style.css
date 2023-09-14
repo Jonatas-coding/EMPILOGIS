@@ -216,7 +216,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 20px;
     margin-top: 20px;
-    position: sticky;
+    position: static;
 }
 
 #footer-contatos #footer-social {
