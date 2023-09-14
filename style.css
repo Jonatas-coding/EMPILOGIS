@@ -216,6 +216,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 20px;
     margin-top: 20px;
+    position: sticky;
 }
 
 #footer-contatos #footer-social {
@@ -303,7 +304,6 @@ section.formulario {
     align-items: center;
     text-align: center;
     justify-content: center;
-    position: sticky;
 }
 
 form {
