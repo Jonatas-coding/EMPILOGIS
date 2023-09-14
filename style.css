@@ -303,7 +303,7 @@ section.formulario {
     align-items: center;
     text-align: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
 }
 
 form {
