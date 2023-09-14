@@ -19,6 +19,7 @@ html {
     background-color: #000000;
     scroll-behavior: smooth;
     scroll-padding-top: 400px;
+    position: stick;
 }
 
 .flex {
