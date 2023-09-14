@@ -203,7 +203,7 @@ footer {
     letter-spacing: 1px;
     width: 100%;
     color: #000000;
-    display: flex;
+    display: static;
 }
 
 #footer-link {
