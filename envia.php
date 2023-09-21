@@ -5,7 +5,7 @@
     $telefone = addslashes($_POST['telefone']);
     $message = addslashes($_POST['message']);
 
-    $para = "empilhadeiras@weblift.com.br";
+    $para = "intelioteste@gmail.com";
     $assunto = "Coleta de dados - Motriz";
 
     $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone."\n"."Message: ".$message;
