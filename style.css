@@ -360,8 +360,3 @@ form {
     transition: 0.3s;
   }
   
-  form button:hover,
-  form button:focus {
-    outline: none;
-    background: #1c70d3;
-  }
