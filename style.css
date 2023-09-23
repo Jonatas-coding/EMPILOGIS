@@ -46,7 +46,7 @@ html {
 
 header {
     width: 100%;
-    padding: 50px 0px;
+    padding: 30px 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,19 +60,19 @@ header.rolagem {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 0px;
+    padding: 50px 0px;
 }
 
 .logo {
     width: 247px;
     height: 87px;
     cursor: pointer;
+    padding-left: 5px;
 }
 
 .logo-footer {
     width: 227px;
     height: 77px;
-    cursor: pointer;
 }
 
 
@@ -121,7 +121,7 @@ header ul li a {
     font-weight: bold;
 }
 
-/* style body da página*/
+/* style body page*/
 
 .coluna {
     padding: 20px 10px;
@@ -195,7 +195,7 @@ section.topo-do-site .flex {
 }
 
 
-/* footer da página*/
+/* footer page*/
 
 footer {
     letter-spacing: 1px;
@@ -208,9 +208,6 @@ footer {
 }
 
 #footer-content {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -219,13 +216,20 @@ footer {
 }
 
 #footer-contatos #footer-social {
-    justify-content: center;
+    justify-content: left;
 }
 
+.footer-pay {
+    text-align: center;
+}
+
+.footer-pay h2{
+    margin: 0px 0px 10px 0px;
+}
 
 #footer-social {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -293,64 +297,71 @@ h3 {
 }
 
 
-/*Form do site*/
-
-.interface h2 p {
-    text-align: center;
-}
-
-.formulario {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
+/*Form page*/
 
 form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px;
-}
-
-
-form input, form textarea {
-    background: #252525;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #ffffff;
-    font-size: 15px;
-}
-
-form input::placeholder {
-    color: #ffd700;
-}
-
-form textarea::placeholder {
-    color: #ffd700;
-}
-
-form textarea {
-    resize: none;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-}
-
-form .btn-enviar input {
-    width: 100px;
-    height: 50px;
-    background: #ffd700;
-    color: #000000;
+    width: 100%;
+    max-width: 20rem;
+  }
+  
+  label,
+  input,
+  textarea,
+  form button {
+    display: block;
+  }
+  
+  input,
+  textarea,
+  form button {
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem;
     font-weight: 700;
+  }
+  
+  input,
+  textarea {
+    height: 50px;
+    margin-bottom: 1rem;
+    color: white;
+    background: #323644;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 0.3125rem #26344a;
+  }
+  
+  label {
+    margin-bottom: 1rem;
+    color: #84868f;
+  }
+  
+  textarea {
+    min-height: 12rem;
+    resize: vertical;
+  }
+  
+  form button {
+    height: 50px;
+    border: none;
+    border-radius: 99px;
+    color: #000000;
+    background: #ffd700;
     cursor: pointer;
-    transition: .2s;
-}
-
-form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #ffd700;
-    transform: scale(1.05);
-}
+    transition: 0.3s;
+  }
+  
+  form button:hover,
+  form button:focus {
+    outline: none;
+    background: #1c70d3;
+  }
