@@ -357,12 +357,19 @@ form {
     background: #ffd700;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 15px;
   }
 
-  section h2, p{
+  .form h2 {
     max-width: 20rem;
     text-align: center;
     padding-bottom: 10px;
-
   }
+
+  .form p {
+    max-width: 20rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
   
