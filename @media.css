@@ -126,12 +126,7 @@
         text-align: center;
     }
 
-
-    #footer-content textarea {
-        text-align: center;
-    }
-
-    #footer-social {
+    #footer-contatos #footer-social {
         justify-content: center;
     }
 
