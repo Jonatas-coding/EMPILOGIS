@@ -196,17 +196,19 @@
 
     </ul>
 
-
-        <form action="https://formsubmit.co/comercial.motriz@hotmail.com" method="POST">
-            <label for="nome">Nome</label>
-            <input type="text" name="name" required>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" required>
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-            <button type="submit" >Enviar</button>
-            <input type="hidden" name="_next" value="https://jonatas-coding.github.io/Motriz/sucesso.html">
-        </form>
+        <section>
+            <h2>Entre em contato </h2>
+            <p>Preenche o formuçário abaixo e entraremos em contato.</p>
+            <form action="https://formsubmit.co/comercial.motriz@hotmail.com" method="POST">
+                <input type="text" name="name" required placeholder="Nome:">
+                <input type="number" name="telefone" required placeholder="Telefone:">
+                <input type="email" name="email" required placeholder="E-mail:">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Assunto:"></textarea>
+                <button type="submit" >Enviar</button>
+                <input type="hidden" name="_next" value="https://jonatas-coding.github.io/Motriz/sucesso.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
 
     <ul class="footer-pay">
         <h2>Formas de Pagamento</h2>
