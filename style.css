@@ -61,6 +61,7 @@ header.rolagem {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0px;
+    position: fixed;
 }
 
 .logo {
@@ -197,12 +198,6 @@ section.topo-do-site .flex {
 
 /* footer page*/
 
-footer {
-    letter-spacing: 1px;
-    width: 100%;
-    color: #000000;
-}
-
 #footer-link {
     text-decoration: none;
 }
@@ -213,6 +208,9 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 20px;
     margin-top: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    color: #000000;
 }
 
 #footer-contatos #footer-social {
@@ -301,7 +299,7 @@ h3 {
 
 form {
     width: 100%;
-    max-width: 20rem;
+    max-width: 30rem;
   }
   
   label,
@@ -361,13 +359,13 @@ form {
   }
 
   .form h2 {
-    max-width: 20rem;
+    max-width: 30rem;
     text-align: center;
     padding-bottom: 10px;
   }
 
   .form p {
-    max-width: 20rem;
+    max-width: 30rem;
     text-align: center;
     padding-bottom: 10px;
   }
