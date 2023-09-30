@@ -2,7 +2,7 @@
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector("#header");
-    header.classList.toggle("rolagem", window.scrollY > 0);
+    header.classList.toggle("rolagem", window.scrollY > 500);
 });
 
 
@@ -18,3 +18,7 @@ hamburguer.addEventListener("click", () => {
   menu.addEventListener("click", () => {
     menu.classList.toggle("active");
   });
+
+
+  /*form page*/
+  
